@@ -1,0 +1,106 @@
+/* Variables */
+:root{
+    --white: #ffffff;
+    --dark: #111111;
+    --bg-dark: #5C5C5C;
+    --yellow: #FFD401;
+    --main-gray: #727272;
+    --gray: #3F3D34;
+
+    --title-h1: 383px;
+    --title-h2: 170px;
+    --title-h3: 128px;
+    --title-h4: 80px;
+    --title-h5: 70px;
+    --title-main: 60px;
+    --title-small: 40px;
+    --title-big-unisans: 48px;
+    --title-small: 32px;
+
+    --subtitle: 20px;
+    --subtitle-big: 30px;
+
+    --main-text: 24px;
+    --menu-footer-text: 11px;
+    --reviews-text: 14px;
+    --small-text: 22px;
+    --shop-text: 16px;
+}
+
+/* Fonts */
+@font-face {
+    font-family: 'gropledbold';
+    src: url('../fonts/gropled-bold-webfont.woff2') format('woff2'),
+         url('../fonts/gropled-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'uni_sansbold';
+    src: url('../fonts/unisansbold-webfont.woff2') format('woff2'),
+         url('../fonts/unisansbold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'uni_sansbook';
+    src: url('../fonts/unisansbook-webfont.woff2') format('woff2'),
+         url('../fonts/unisansbook-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'uni_sans_regularregular';
+    src: url('../fonts/unisansregular-webfont.woff2') format('woff2'),
+         url('../fonts/unisansregular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'uni_sanssemibold';
+    src: url('../fonts/unisanssemibold-webfont.woff2') format('woff2'),
+         url('../fonts/unisanssemibold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+/* Reset styles */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+ul {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+}
+img {
+  max-width: 100%;
+  display: block;
+}
+button {
+    outline: none;
+    background-color: transparent;
+    border: none;
+}
+
+/* Common styles */
+body {
+    color: var(--white);
+    font-size: var(--main-text);
+    max-width: 100%;
+    background-color: var(--dark);
+}
+.wrapper {
+    max-width: 1230px;
+    margin: 0 auto;
+}
