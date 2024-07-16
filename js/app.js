@@ -1,7 +1,5 @@
-// SLIDER
-$('.slider-services__inner').slick({
-    infinite: true,
-    dots: false,
-    prevArrow: '<button type="button" class="slick-prev">Previous</button>',
-    nextArrow: '<button type="button" class="slick-next">Next</button>'
-});
+const date = new Date();
+const year = date.getFullYear();
+
+const nowYear = document.querySelector('.year');
+nowYear.textContent = year;

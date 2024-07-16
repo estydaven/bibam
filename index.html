@@ -12,42 +12,235 @@
 <body>
     <div class="wrapper">
         <header class="header">
-            <img src="images/icons/logo.svg" alt="" class="header__logo">
+            <div class="header__image">
+                <img src="images/icons/logo.svg" alt="" class="header__logo">
+            </div>
             <nav class="navigation">
                 <ul class="nav-list">
-                    <li class="nav-list__item"><a href="" class="nav-list__link">О нас</a></li>
+                    <li class="nav-list__item"><a href="#about" class="nav-list__link">О нас</a></li>
                     <li class="nav-list__item"><a href="" class="nav-list__link">Услуги</a></li>
                     <li class="nav-list__item"><a href="" class="nav-list__link">Контакты</a></li>
                 </ul>
                 <a href="tel:+375292345678" class="header__phone">+375 29 234 56 78</a>
             </nav>
+            <ul class="burger">
+                <li class="burger__line"></li>
+                <li class="burger__line burger__line_second"></li>
+                <li class="burger__line"></li>
+            </ul>
         </header>
-        <section class="hero">
-            <div class="hero-info">
-                <h1 class="hero-info__title">Маркетинговое агентство Bibam</h1>
-                <p class="hero-info__text">В современном мире бизнеса, где конкуренция все больше усиливается, эффективное маркетинговое продвижение становится ключевым фактором успеха</p>
-                <button class="button button_dark">Узнать больше</button>
+        <main>
+            <section class="hero">
+                <div class="hero-info">
+                    <h1 class="hero-info__title main-title">Маркетинговое агентство Bibam</h1>
+                    <p class="hero-info__text">В современном мире бизнеса, где конкуренция все больше усиливается, эффективное маркетинговое продвижение становится ключевым фактором успеха</p>
+                    <button class="button button_dark">Узнать больше</button>
+                </div>
+                <img src="images/home-page/image-1.jpg" alt="" class="hero__image">
+            </section>
+            <section class="slider-services">
+                <div class="slider-services__inner">
+                    <div class="slider-services__slide slider-services__slide_first">
+                        <h3 class="main-title">Съемка корпоративного видео</h3>
+                    </div>
+                    <div class="slider-services__slide slider-services__slide_second">
+                        <h3 class="main-title">Съемка корпоративного видео</h3>
+                    </div>
+                    <div class="slider-services__slide slider-services__slide_third">
+                        <h3 class="main-title">Съемка корпоративного видео</h3>
+                    </div>
+                </div>
+            </section>
+            <section class="first-pages-links">
+                <div class="page-link page-link_first">
+                    <h3 class="page-link__title">
+                        Ev<span class="page-link__span">ent</span>
+                    </h3>
+                    <a href="event.html" class="page-link__link">Подробнее</a>
+                </div>
+                <div class="page-link page-link_first">
+                    <h3 class="page-link__title">
+                        Des<span class="page-link__span">ign</span>
+                    </h3>
+                    <a href="design.html" class="page-link__link">Подробнее</a>
+                </div>
+            </section>
+            <section class="about-info" id="about">
+                <h3 class="about-info__title">Мы знаем, что делаем</h3>
+                <p class="about-info__description">Основные принципы SEO включают в себя оптимизацию контента, технические аспекты сайта, работу с внешними ссылками и многие другие факторы. Важно помнить, что SEO - это долгосрочный процесс, требующий постоянного мониторинга и корректировки.</p>
+            </section>
+            <section class="about-slider">
+                <div class="about-slider__inner">
+                    <div class="about-slider__slide about-slider__slide_first">
+                        <p class="about-slider__text">Пиар привлечения инвестиций: почему важно освещать лончи</p>
+                        <a href="#" class="about-slider__link">Читать</a>
+                    </div>
+                    <div class="about-slider__slide about-slider__slide_second">
+                        <p class="about-slider__text">Бренд-медиа: нужны они бизнесу или нет</p>
+                        <a href="#" class="about-slider__link">Читать</a>
+                    </div>
+                    <div class="about-slider__slide about-slider__slide_third">
+                        <p class="about-slider__text">Десять вдохновляющих рекламных кампаний последних трех лет</p>
+                        <a href="#" class="about-slider__link">Читать</a>
+                    </div>
+                    <div class="about-slider__slide about-slider__slide_fourth">
+                        <p class="about-slider__text">Десять вдохновляющих рекламных кампаний последних трех лет</p>
+                        <a href="#" class="about-slider__link">Читать</a>
+                    </div>
+                </div>
+            </section>
+            <section class="reviews">
+                <div class="reviews-slider">
+                    <div class="reviews-slider__slide">
+                        <div class="review">
+                            <img src="images/home-page/review-1.png" alt="" class="review__image">
+                            <div class="review-info">
+                                <h4 class="review-info__title">Кристина Цветаева</h4>
+                                <p class="review-info__text">Хотим выразить большую благодарность компании и бригаде ребятам Александру, Виктору, Геннадию. За 10 дней они построили нам дом 6 на 4 всё нас устраивает домик получился очень красивый.</p>
+                                <a href="#" class="review-info__link">Читать отзыв</a>
+                            </div>
+                        </div>
+                        <div class="review">
+                            <img src="images/home-page/review-2.png" alt="" class="review__image">
+                            <div class="review-info">
+                                <h4 class="review-info__title">Максим Иванов</h4>
+                                <p class="review-info__text">Хотим выразить большую благодарность компании и бригаде ребятам Александру, Виктору, Геннадию. За 10 дней они построили нам дом 6 на 4 всё нас устраивает домик получился очень красивый.</p>
+                                <a href="#" class="review-info__link">Читать отзыв</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="reviews-slider__slide">
+                        <div class="review">
+                            <img src="images/home-page/review-3.png" alt="" class="review__image">
+                            <div class="review-info">
+                                <h4 class="review-info__title">Анна Царева</h4>
+                                <p class="review-info__text">Хотим выразить большую благодарность компании и бригаде ребятам Александру, Виктору, Геннадию. За 10 дней они построили нам дом 6 на 4 всё нас устраивает домик получился очень красивый.</p>
+                                <a href="#" class="review-info__link">Читать отзыв</a>
+                            </div>
+                        </div>
+                        <div class="review">
+                            <img src="images/home-page/review-4.png" alt="" class="review__image">
+                            <div class="review-info">
+                                <h4 class="review-info__title">Максим Иванов</h4>
+                                <p class="review-info__text">Хотим выразить большую благодарность компании и бригаде ребятам Александру, Виктору, Геннадию. За 10 дней они построили нам дом 6 на 4 всё нас устраивает домик получился очень красивый.</p>
+                                <a href="#" class="review-info__link">Читать отзыв</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="reviews-slider__slide">
+                        <div class="review">
+                            <img src="images/home-page/review-1.png" alt="" class="review__image">
+                            <div class="review-info">
+                                <h4 class="review-info__title">Кристина Цветаева</h4>
+                                <p class="review-info__text">Хотим выразить большую благодарность компании и бригаде ребятам Александру, Виктору, Геннадию. За 10 дней они построили нам дом 6 на 4 всё нас устраивает домик получился очень красивый.</p>
+                                <a href="#" class="review-info__link">Читать отзыв</a>
+                            </div>
+                        </div>
+                        <div class="review">
+                            <img src="images/home-page/review-2.png" alt="" class="review__image">
+                            <div class="review-info">
+                                <h4 class="review-info__title">Максим Иванов</h4>
+                                <p class="review-info__text">Хотим выразить большую благодарность компании и бригаде ребятам Александру, Виктору, Геннадию. За 10 дней они построили нам дом 6 на 4 всё нас устраивает домик получился очень красивый.</p>
+                                <a href="#" class="review-info__link">Читать отзыв</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="reviews-slider__slide">
+                        <div class="review">
+                            <img src="images/home-page/review-3.png" alt="" class="review__image">
+                            <div class="review-info">
+                                <h4 class="review-info__title">Анна Царева</h4>
+                                <p class="review-info__text">Хотим выразить большую благодарность компании и бригаде ребятам Александру, Виктору, Геннадию. За 10 дней они построили нам дом 6 на 4 всё нас устраивает домик получился очень красивый.</p>
+                                <a href="#" class="review-info__link">Читать отзыв</a>
+                            </div>
+                        </div>
+                        <div class="review">
+                            <img src="images/home-page/review-4.png" alt="" class="review__image">
+                            <div class="review-info">
+                                <h4 class="review-info__title">Максим Иванов</h4>
+                                <p class="review-info__text">Хотим выразить большую благодарность компании и бригаде ребятам Александру, Виктору, Геннадию. За 10 дней они построили нам дом 6 на 4 всё нас устраивает домик получился очень красивый.</p>
+                                <a href="#" class="review-info__link">Читать отзыв</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="application">
+                <div class="application-info">
+                    <h4 class="application-info__title">Оставьте заявку на бесплатную консультацию</h4>
+                    <p class="application-info__text">Мы перезвоним Вам в ближайшее время</p>
+                </div>
+                <form method="post" class="form">
+                    <input type="text" name="name" class="form__field" placeholder="Ваше имя" required>
+                    <input type="tel" name="phone" class="form__field" placeholder="Ваш телефон" required>
+                    <button class="button button_form" type="submit">Отправить заявку</button>
+                    <p class="form__acceptance">Нажимая на кнопку, Вы даете согласие на <a href="privacy.html" class="form__link">обработку персональных данных</a></p>
+                </form>
+            </section>
+        </main>
+        <footer class="footer">
+            <div class="footer-info">
+                <img src="images/icons/logo.svg" alt="" class="footer-info__logo">
+                <ul class="footer-info__list">
+                    <li class="footer-info__item"><a href="#" class="footer-info__link" target="_blank"><img src="images/icons/insta.svg" alt="" class="footer-info__ico"></a></li>
+                    <li class="footer-info__item"><a href="#" class="footer-info__link" target="_blank"><img src="images/icons/vk.svg" alt="" class="footer-info__ico"></a></li>
+                    <li class="footer-info__item"><a href="#" class="footer-info__link" target="_blank"><img src="images/icons/ok.svg" alt="" class="footer-info__ico"></a></li>
+                    <li class="footer-info__item"><a href="#" class="footer-info__link" target="_blank"><img src="images/icons/fb.svg" alt="" class="footer-info__ico"></a></li>
+                </ul>
+                <a href="footer-info" class="footer-info__privacy">Политика конфиденциальности</a>
+                <p class="footer-info__text">©<span class="year"></span> ООО Бибам</p>
             </div>
-            <img src="images/home-page/image-1.jpg" alt="" class="hero__image">
-        </section>
-        <section class="slider-services">
-            <div class="slider-services__inner">
-                <div class="slider-services__slide slider-services__slide_first">
-                    <h3 class="slider-services__text">Съемка корпоративного видео</h3>
-                </div>
-                <div class="slider-services__slide slider-services__slide_first">
-                    <h3 class="slider-services__text">Съемка корпоративного видео</h3>
-                </div>
-                <div class="slider-services__slide slider-services__slide_first">
-                    <h3 class="slider-services__text">Съемка корпоративного видео</h3>
-                </div>
+            <div class="footer-menu">
+                <h5 class="footer-menu__title">Главная</h5>
+                <ul class="footer-menu__list">
+                    <li class="footer-menu__item"><a href="#" class="footer-menu__link">Услуги</a></li>
+                    <li class="footer-menu__item"><a href="#" class="footer-menu__link">Кейсы</a></li>
+                    <li class="footer-menu__item"><a href="#" class="footer-menu__link">Новости</a></li>
+                    <li class="footer-menu__item"><a href="#" class="footer-menu__link">Отзывы</a></li>
+                </ul>
             </div>
-        </section>
+            <div class="footer-menu">
+                <h5 class="footer-menu__title">Дизайн</h5>
+                <ul class="footer-menu__list">
+                    <li class="footer-menu__item"><a href="#" class="footer-menu__link">Услуги</a></li>
+                    <li class="footer-menu__item"><a href="#" class="footer-menu__link">Кейсы</a></li>
+                    <li class="footer-menu__item"><a href="#" class="footer-menu__link">Клиенты</a></li>
+                </ul>
+            </div>
+            <div class="footer-menu">
+                <h5 class="footer-menu__title">Event</h5>
+                <ul class="footer-menu__list">
+                    <li class="footer-menu__item"><a href="#" class="footer-menu__link">События</a></li>
+                    <li class="footer-menu__item"><a href="#" class="footer-menu__link">Прокат оборудования</a></li>
+                    <li class="footer-menu__item"><a href="#" class="footer-menu__link">Шоу-программы</a></li>
+                    <li class="footer-menu__item"><a href="#" class="footer-menu__link">Театр огня</a></li>
+                </ul>
+            </div>
+            <div class="footer-menu">
+                <h5 class="footer-menu__title">События</h5>
+                <ul class="footer-menu__list">
+                    <li class="footer-menu__item"><a href="#" class="footer-menu__link">Корпоративы</a></li>
+                    <li class="footer-menu__item"><a href="#" class="footer-menu__link">Выпускные</a></li>
+                    <li class="footer-menu__item"><a href="#" class="footer-menu__link">Деловые мероприятия</a></li>
+                    <li class="footer-menu__item"><a href="#" class="footer-menu__link">BTL-мероприятия</a></li>
+                </ul>
+            </div>
+            <div class="footer-menu">
+                <h5 class="footer-menu__title">Прокат оборудования</h5>
+                <ul class="footer-menu__list">
+                    <li class="footer-menu__item"><a href="#" class="footer-menu__link">Звук</a></li>
+                    <li class="footer-menu__item"><a href="#" class="footer-menu__link">Свет</a></li>
+                    <li class="footer-menu__item"><a href="#" class="footer-menu__link">Дым</a></li>
+                    <li class="footer-menu__item"><a href="#" class="footer-menu__link">Искры</a></li>
+                </ul>
+            </div>
+        </footer>
     </div>
 
     <script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
     <script src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <script src="js/slick.min.js"></script>
+    <script src="js/slider.js"></script>
     <script src="js/app.js"></script>
 </body>
 </html>
