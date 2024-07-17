@@ -18,7 +18,7 @@ $('.reviews-slider').slick({
     slidesToShow: 2,
     slidesToScroll: 1,
     infinite: true,
-    dots: false,
-    prevArrow: '<button type="button" class="slick-main slick-main_prev"></button>',
-    nextArrow: '<button type="button" class="slick-main slick-main_next"></button>'
+    dots: true,
+    arrows: false,
+    dotsClass: 'slick-dots reviews-slider__dots'
 });
