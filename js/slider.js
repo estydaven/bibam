@@ -11,7 +11,7 @@ $('.about-slider__inner').slick({
     infinite: true,
     dots: false,
     prevArrow: '<button type="button" class="slick-main slick-main_prev"></button>',
-    nextArrow: '<button type="button" class="slick-main slick-main_next"></button>'
+    nextArrow: '<button type="button" class="slick-main slick-main_next"></button>',
 });
 
 $('.reviews-slider').slick({

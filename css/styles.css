@@ -25,6 +25,7 @@
     --reviews-text: 14px;
     --small-text: 22px;
     --shop-text: 16px;
+    --form-text: 12px;
 }
 
 /* Fonts */
@@ -111,6 +112,7 @@ body {
 .wrapper {
     max-width: 1230px;
     margin: 0 auto;
+    padding: 0 15px;
 }
 .main-title {
     font-family: 'gropledbold';
@@ -139,6 +141,14 @@ body {
     opacity: .8;
     transform: scale(.95);
 }
+input::-webkit-input-placeholder       {opacity: 1; transition: opacity 0.3s ease;}
+input::-moz-placeholder                {opacity: 1; transition: opacity 0.3s ease;}
+input:-moz-placeholder                 {opacity: 1; transition: opacity 0.3s ease;}
+input:-ms-input-placeholder            {opacity: 1; transition: opacity 0.3s ease;}
+input:focus::-webkit-input-placeholder {opacity: 0; transition: opacity 0.3s ease;}
+input:focus::-moz-placeholder          {opacity: 0; transition: opacity 0.3s ease;}
+input:focus:-moz-placeholder           {opacity: 0; transition: opacity 0.3s ease;}
+input:focus:-ms-input-placeholder      {opacity: 0; transition: opacity 0.3s ease;}
 
 /* Header styles */
 .header {
@@ -228,6 +238,9 @@ body {
 /* Slider services */
 .slider-services {
     margin-bottom: 30px;
+}
+.slider-services__inner {
+    margin: 0 -15px;
 }
 .slider-services__slide {
     position: relative;
@@ -372,6 +385,9 @@ body {
 .about-slider {
     margin-bottom: 30px;
 }
+.about-slider__inner {
+    margin: 0 -15px;
+}
 .about-slider__slide {
     position: relative;
     display: flex !important;
@@ -456,6 +472,9 @@ body {
 .review-info__link:hover {
     text-decoration: underline;
 }
+.reviews-slider {
+    margin: 0 -15px;
+}
 .reviews-slider__dots li.slick-active button:before {
     opacity: 1 !important;
     color: var(--yellow) !important;
@@ -464,4 +483,110 @@ body {
     font-size: 15px !important;
     opacity: 1 !important;
     color: var(--white) !important;
+}
+
+/* Application and form styles */
+.application {
+    display: flex;
+    background: var(--yellow) url(../images/home-page/form-img.jpg);
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-position: bottom right -30px;
+    border-radius: 20px;
+    padding: 110px 50px 60px 50px;
+    margin-bottom: 60px;
+}
+.application-info {
+    max-width: 290px;
+    margin-right: 40px;
+    color: var(--dark);
+}
+.application-info__title {
+    font-family: 'uni_sansbold';
+    font-size: var(--title-small);
+    margin-bottom: 50px;
+    text-transform: uppercase;
+}
+.form {
+    display: flex;
+    flex-direction: column;
+    row-gap: 26px;
+    max-width: 380px;
+}
+.form__field {
+    height: 55px;
+    border: 1px solid rgb(17, 17, 17);
+    border-radius: 20px;
+    font-size: var(--reviews-text);
+    font-family: 'uni_sans_regularregular';
+    padding: 0 38px;
+    background-color: var(--yellow);
+    color: var(--dark);
+    outline: none;
+}
+.form__field::placeholder {
+    color: var(--dark);
+}
+.button_form {
+    border-radius: 20px;
+    font-family: 'uni_sansbold';
+    font-size: var(--reviews-text);
+}
+.form__acceptance {
+    color: var(--dark);
+    font-size: var(--form-text);
+    text-align: center;
+}
+.form__link {
+    color: var(--dark);
+    font-family: 'uni_sansbold';
+}
+
+/* Footer styles */
+.footer {
+    display: flex;
+    column-gap: 65px;
+    color: var(--main-gray);
+    font-size: var(--menu-footer-text);
+    padding-bottom: 100px;
+}
+.footer-info__logo {
+    margin-bottom: 50px;
+}
+.footer-info__list {
+    display: flex;
+    align-items: center;
+    column-gap: 5px;
+    margin-bottom: 10px;
+}
+.footer-info__ico {
+    width: 17px;
+    height: 17px;
+    transition: all .3s linear;
+}
+.footer-info__ico:hover {
+    transform: scale(0.8);
+}
+.footer-info__privacy {
+    display: block;
+    color: var(--main-gray);
+    margin-bottom: 5px;
+}
+.footer__inner {
+    display: flex;
+    column-gap: 145px;
+}
+.footer-menu__title {
+    color: var(--white);
+    font-family: 'uni_sansbold';
+    margin-bottom: 10px;
+}
+.footer-menu__item {
+    margin-bottom: 10px;
+}
+.footer-menu__item:last-child {
+    margin-bottom: 0;
+}
+.footer-menu__link {
+    color: var(--main-gray);
 }
