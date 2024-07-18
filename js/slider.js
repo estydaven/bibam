@@ -1,4 +1,4 @@
-$('.slider-services__inner').slick({
+$('.main-slider__inner').slick({
     infinite: true,
     dots: false,
     prevArrow: '<button type="button" class="slick-main slick-main_prev"></button>',
