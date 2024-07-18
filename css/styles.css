@@ -225,6 +225,7 @@ input:focus:-ms-input-placeholder      {opacity: 0; transition: opacity 0.3s eas
     margin-bottom: 20px;
 }
 .hero-info__text {
+    font-family: 'uni_sansbook';
     font-size: var(--small-text);
     margin-bottom: 50px;
 }
