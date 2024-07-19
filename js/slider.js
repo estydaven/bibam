@@ -5,13 +5,22 @@ $('.main-slider__inner').slick({
     nextArrow: '<button type="button" class="slick-main slick-main_next"></button>'
 });
 
-$('.about-slider__inner').slick({
+$('.about-slider').slick({
     slidesToShow: 3,
     slidesToScroll: 1,
     infinite: true,
     dots: false,
     prevArrow: '<button type="button" class="slick-main slick-main_prev"></button>',
     nextArrow: '<button type="button" class="slick-main slick-main_next"></button>',
+});
+
+$('.slider-design').slick({
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    infinite: true,
+    dots: true,
+    arrows: false,
+    dotsClass: 'slick-dots reviews-slider__dots slider-design__dots'
 });
 
 $('.reviews-slider').slick({
