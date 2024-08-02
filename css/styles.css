@@ -842,6 +842,19 @@ input:focus:-ms-input-placeholder      {opacity: 0; transition: opacity 0.3s eas
     row-gap: 5px;
     perspective: 1000px;
     cursor: pointer;
+    transition: transform 0.5s ease, opacity 0.5s ease;
+}
+.rental.hidden {
+    width: 0;
+    height: 0;
+    position: absolute;
+    transform: scale(0);
+    opacity: 0;
+    display: block;
+}
+.rental.visible {
+    transform: scale(1);
+    opacity: 1;
 }
 .rental:hover {
     border-radius: 20px 20px 0 0;
@@ -865,8 +878,6 @@ input:focus:-ms-input-placeholder      {opacity: 0; transition: opacity 0.3s eas
     padding: 20px 25px 60px 25px;
     background-color: var(--gray);
     border-radius: 0 0 20px 20px;
-    opacity: 0;
-    transition: transform 0.5s, opacity 0.5s;
 }
 .rental:hover .rental__hidden {
     transform: translateY(0%) scaleY(1);;
