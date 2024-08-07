@@ -20,10 +20,10 @@
             <nav class="navigation">
                 <ul class="nav-list">
                     <li class="nav-list__item"><a href="#about" class="nav-list__link">О нас</a></li>
-                    <li class="nav-list__item"><a href="" class="nav-list__link">Услуги</a></li>
+                    <li class="nav-list__item"><a href="#services" class="nav-list__link">Услуги</a></li>
                     <li class="nav-list__item"><a href="#order" class="nav-list__link">Контакты</a></li>
                 </ul>
-                <a href="tel:+375292345678" class="header__phone">+375 29 234 56 78</a>
+                <a href="tel:+375298699603" class="header__phone">+375 29 869 96 03</a>
             </nav>
             <ul class="burger">
                 <li class="burger__line"></li>
@@ -36,7 +36,7 @@
                 <div class="hero-info">
                     <h1 class="hero-info__title main-title">Маркетинговое агентство Bibam</h1>
                     <p class="hero-info__text">В современном мире бизнеса, где конкуренция все больше усиливается, эффективное маркетинговое продвижение становится ключевым фактором успеха</p>
-                    <button class="hero-info_button button button_dark">Узнать больше</button>
+                    <a href="#about" class="hero-info_button button button_dark">Узнать больше</a>
                 </div>
                 <img src="images/home-page/image-1.jpg" alt="" class="hero__image">
             </section>
@@ -53,25 +53,25 @@
                     </div>
                 </div>
             </section>
-            <section class="first-pages-links">
-                <div class="page-link page-link_first">
-                    <h3 class="page-link__title">
-                        Ev<span class="page-link__span">ent</span>
-                    </h3>
-                    <a href="events.html" class="page-link__link button button_yellow">Подробнее</a>
-                </div>
+            <section class="first-pages-links" id="services">
                 <div class="page-link page-link_second">
                     <h3 class="page-link__title">
                         Des<span class="page-link__span">ign</span>
                     </h3>
                     <a href="design.html" class="page-link__link button button_yellow">Подробнее</a>
                 </div>
+                <div class="page-link page-link_first">
+                    <h3 class="page-link__title">
+                        Ev<span class="page-link__span">ent</span>
+                    </h3>
+                    <a href="events.html" class="page-link__link button button_yellow">Подробнее</a>
+                </div>
             </section>
             <section class="about-info" id="about">
                 <h3 class="about-info__title main-title">Мы знаем, что делаем</h3>
                 <p class="about-info__description">Основные принципы SEO включают в себя оптимизацию контента, технические аспекты сайта, работу с внешними ссылками и многие другие факторы. Важно помнить, что SEO - это долгосрочный процесс, требующий постоянного мониторинга и корректировки.</p>
             </section>
-            <section class="many-picture-slider">
+            <!-- <section class="many-picture-slider">
                 <div class="many-picture-slider__inner about-slider">
                     <div class="many-picture-slider__slide many-picture-slider__slide_first">
                         <p class="many-picture-slider__text">Пиар привлечения инвестиций: почему важно освещать лончи</p>
@@ -90,8 +90,8 @@
                         <a href="#" class="many-picture-slider__link">Читать</a>
                     </div>
                 </div>
-            </section>
-            <section class="reviews">
+            </section> -->
+            <section class="reviews" id="reviews">
                 <div class="reviews-slider">
                     <div class="reviews-slider__slide">
                         <div class="review">
@@ -179,15 +179,32 @@
                     <p class="form__acceptance">Нажимая на кнопку, Вы даете согласие на <a href="privacy.html" class="form__link">обработку персональных данных</a></p>
                 </form>
             </section>
+            <section class="contacts">
+                <h3 class="main-title contacts__title">Другие способы связаться с нами</h3>
+                <p class="contacts__subtitle">Свяжитесь с нами любым удобным для вас способом, и мы предоставим вам подробную информацию по всем нашим услугам</p>
+                <div class="contacts__inner">
+                    <div class="contacts__block">
+                        <h4 class="contacts__header">Адрес</h4>
+                        <p class="contacts__info">Наш адрес</p>
+                    </div>
+                    <div class="contacts__block">
+                        <h4 class="contacts__header">Телефон</h4>
+                        <p class="contacts__info"><a href="tel:+375298699603" class="contacts__link">+375 29 869 96 03</a></p>
+                    </div>
+                    <div class="contacts__block">
+                        <h4 class="contacts__header">Email</h4>
+                        <p class="contacts__info"><a href="mailto:example@gmail.com" class="contacts__link">example@gmail.com</a></p>
+                    </div>
+                </div>
+            </section>
         </main>
         <footer class="footer">
             <div class="footer-info">
-                <img src="images/bibam-logo.png" alt="" class="footer-info__logo">
+                <a href="index.html" class="header__link">
+                    <img src="images/bibam-logo.png" alt="" class="footer-info__logo">
+                </a>
                 <ul class="footer-info__list">
-                    <li class="footer-info__item"><a href="#" class="footer-info__link" target="_blank"><img src="images/icons/insta.svg" alt="" class="footer-info__ico"></a></li>
-                    <li class="footer-info__item"><a href="#" class="footer-info__link" target="_blank"><img src="images/icons/vk.svg" alt="" class="footer-info__ico"></a></li>
-                    <li class="footer-info__item"><a href="#" class="footer-info__link" target="_blank"><img src="images/icons/ok.svg" alt="" class="footer-info__ico"></a></li>
-                    <li class="footer-info__item"><a href="#" class="footer-info__link" target="_blank"><img src="images/icons/fb.svg" alt="" class="footer-info__ico"></a></li>
+                    <li class="footer-info__item"><a href="https://www.instagram.com/eb_fireshow/" class="footer-info__link" target="_blank"><img src="images/icons/insta.svg" alt="" class="footer-info__ico"></a></li>
                 </ul>
                 <a href="footer-info" class="footer-info__privacy">Политика конфиденциальности</a>
                 <p class="footer-info__text">©<span class="year"></span> ООО Бибам</p>
@@ -196,45 +213,43 @@
                 <div class="footer-menu">
                     <h5 class="footer-menu__title">Главная</h5>
                     <ul class="footer-menu__list">
-                        <li class="footer-menu__item"><a href="#" class="footer-menu__link">Услуги</a></li>
-                        <li class="footer-menu__item"><a href="#" class="footer-menu__link">Кейсы</a></li>
-                        <li class="footer-menu__item"><a href="#" class="footer-menu__link">Новости</a></li>
-                        <li class="footer-menu__item"><a href="#" class="footer-menu__link">Отзывы</a></li>
+                        <li class="footer-menu__item"><a href="#services" class="footer-menu__link">Услуги</a></li>
+                        <li class="footer-menu__item"><a href="#reviews" class="footer-menu__link">Отзывы</a></li>
                     </ul>
                 </div>
                 <div class="footer-menu">
                     <h5 class="footer-menu__title">Дизайн</h5>
                     <ul class="footer-menu__list">
-                        <li class="footer-menu__item"><a href="#" class="footer-menu__link">Услуги</a></li>
-                        <li class="footer-menu__item"><a href="#" class="footer-menu__link">Кейсы</a></li>
-                        <li class="footer-menu__item"><a href="#" class="footer-menu__link">Клиенты</a></li>
+                        <li class="footer-menu__item"><a href="design.html#services" class="footer-menu__link">Услуги</a></li>
+                        <li class="footer-menu__item"><a href="design.html#cases" class="footer-menu__link">Кейсы</a></li>
+                        <li class="footer-menu__item"><a href="design.html#clients" class="footer-menu__link">Клиенты</a></li>
                     </ul>
                 </div>
                 <div class="footer-menu">
                     <h5 class="footer-menu__title">Event</h5>
                     <ul class="footer-menu__list">
-                        <li class="footer-menu__item"><a href="#" class="footer-menu__link">События</a></li>
-                        <li class="footer-menu__item"><a href="#" class="footer-menu__link">Прокат оборудования</a></li>
-                        <li class="footer-menu__item"><a href="#" class="footer-menu__link">Шоу-программы</a></li>
-                        <li class="footer-menu__item"><a href="#" class="footer-menu__link">Театр огня</a></li>
+                        <li class="footer-menu__item"><a href="events.html#events" class="footer-menu__link">Администрирование и координирование событий</a></li>
+                        <li class="footer-menu__item"><a href="events.html#rent" class="footer-menu__link">Прокат оборудования</a></li>
+                        <li class="footer-menu__item"><a href="events.html#walkers" class="footer-menu__link">Ходулисты</a></li>
+                        <li class="footer-menu__item"><a href="events.html#fire" class="footer-menu__link">Театр огня</a></li>
                     </ul>
                 </div>
                 <div class="footer-menu">
                     <h5 class="footer-menu__title">События</h5>
                     <ul class="footer-menu__list">
-                        <li class="footer-menu__item"><a href="#" class="footer-menu__link">Корпоративы</a></li>
-                        <li class="footer-menu__item"><a href="#" class="footer-menu__link">Выпускные</a></li>
-                        <li class="footer-menu__item"><a href="#" class="footer-menu__link">Деловые мероприятия</a></li>
-                        <li class="footer-menu__item"><a href="#" class="footer-menu__link">BTL-мероприятия</a></li>
+                        <li class="footer-menu__item"><a href="event.html#events" class="footer-menu__link">Корпоративы</a></li>
+                        <li class="footer-menu__item"><a href="event.html#events" class="footer-menu__link">Выпускные</a></li>
+                        <li class="footer-menu__item"><a href="event.html#events" class="footer-menu__link">Деловые мероприятия</a></li>
+                        <li class="footer-menu__item"><a href="event.html#events" class="footer-menu__link">BTL-мероприятия</a></li>
                     </ul>
                 </div>
                 <div class="footer-menu">
                     <h5 class="footer-menu__title">Прокат оборудования</h5>
                     <ul class="footer-menu__list">
-                        <li class="footer-menu__item"><a href="#" class="footer-menu__link">Звук</a></li>
-                        <li class="footer-menu__item"><a href="#" class="footer-menu__link">Свет</a></li>
-                        <li class="footer-menu__item"><a href="#" class="footer-menu__link">Дым</a></li>
-                        <li class="footer-menu__item"><a href="#" class="footer-menu__link">Искры</a></li>
+                        <li class="footer-menu__item"><a href="rent.html#sound" class="footer-menu__link">Звук</a></li>
+                        <li class="footer-menu__item"><a href="rent.html#rent" class="footer-menu__link">Аренда красных дорожек</a></li>
+                        <li class="footer-menu__item"><a href="rent.html#smoke" class="footer-menu__link">Дым</a></li>
+                        <li class="footer-menu__item"><a href="rent.html#sparks" class="footer-menu__link">Искры</a></li>
                     </ul>
                 </div>
             </div>
