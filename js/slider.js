@@ -29,5 +29,14 @@ $('.reviews-slider').slick({
     infinite: true,
     dots: true,
     arrows: false,
-    dotsClass: 'slick-dots reviews-slider__dots'
+    dotsClass: 'slick-dots reviews-slider__dots',
+    responsive: [
+        {
+          breakpoint: 768,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1,
+          }
+        }
+      ]
 });

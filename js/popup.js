@@ -78,6 +78,7 @@ const popup = document.querySelector('.popup');
 const closeButton = document.querySelector('.popup__close');
 const items = document.querySelectorAll('.rental');
 const popupTitle= document.querySelector('.rental__header_popup');
+//const popupImageSrc= document.querySelector('.rental__image');
 const popupInfo= document.querySelector('.rental__info_popup');
 const popupPrice= document.querySelector('.price');
 
@@ -102,6 +103,7 @@ items.forEach(function(item) {
                 popupTitle.innerText = rental.title;
                 popupInfo.innerText = rental.info;
                 popupPrice.innerText = rental.price;
+                //popupImageSrc.src = `images/equipment/image-${rental.id}.png`
             }
         }
 
