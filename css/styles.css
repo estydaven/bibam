@@ -1358,6 +1358,19 @@ input:focus:-ms-input-placeholder      {opacity: 0; transition: opacity 0.3s eas
         max-height: 300px;
         min-height: 300px;
     }
+    .rentals__inner {
+        gap: 20px;
+    }
+    .rental {
+        width: calc(100% / 4 - 15px);
+        padding: 25px 15px;
+    }
+    .rental_popup {
+        width: 100%;
+    }
+    .rentals__title {
+        font-size: var(--title-h4);
+    }
 }
 @media (max-width: 940px) {
     .event__title {
@@ -1376,6 +1389,14 @@ input:focus:-ms-input-placeholder      {opacity: 0; transition: opacity 0.3s eas
 @media (max-width: 860px) {
     .nav-list {
         column-gap: 40px;
+    }
+    .rental {
+        width: calc(100% / 2 - 15px);
+        padding: 25px;
+        align-items: flex-start;
+    }
+    .rental_popup {
+        width: 100%;
     }
 }
 @media (max-width: 768px) {
@@ -1478,6 +1499,9 @@ input:focus:-ms-input-placeholder      {opacity: 0; transition: opacity 0.3s eas
         font-size: var(--title-little);
     }
     .title-page__title_little {
+        font-size: var(--title-main);
+    }
+    .rentals__title {
         font-size: var(--title-main);
     }
 }
@@ -1649,6 +1673,13 @@ input:focus:-ms-input-placeholder      {opacity: 0; transition: opacity 0.3s eas
         max-height: 150px;
         min-height: 150px;
     }
+    .rentals__title {
+        font-size: var(--title-little);
+        margin-bottom: 20px;
+    }
+    .rentals__inner {
+        margin-bottom: 40px;
+    }
 }
 @media (max-width: 480px) {
     .header__logo {
@@ -1765,10 +1796,40 @@ input:focus:-ms-input-placeholder      {opacity: 0; transition: opacity 0.3s eas
     .commerce-block__link {
         width: 200px;
     }
+    .rental {
+        padding: 15px;
+    }
+    .rentals__inner {
+        gap: 15px;
+    }
+    .rental {
+        width: calc(100% / 2 - 8px);
+        font-size: var(--shop-text);
+    }
+    .rental_popup {
+        width: 100%;
+        padding: 0;
+    }
+    .popup__inner {
+        padding: 15px;
+    }
+    .rental__image {
+        max-height: 150px;
+        margin-bottom: 10px;
+    }
+    .rental__info {
+        margin: 15px 0;
+    }
 }
 @media (max-width: 420px) {
     .title-page__title_little {
         font-size: 28px;
+    }
+    .rentals__title {
+        font-size: 28px;
+    }
+    .rental {
+        width: 100%;
     }
 }
 @media (max-width: 380px) {
