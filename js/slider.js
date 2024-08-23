@@ -20,7 +20,25 @@ $('.slider-design').slick({
     infinite: true,
     dots: true,
     arrows: false,
-    dotsClass: 'slick-dots reviews-slider__dots slider-design__dots'
+    dotsClass: 'slick-dots reviews-slider__dots slider-design__dots',
+    responsive: [
+        {
+          breakpoint: 1024,
+          settings: {
+            slidesToShow: 2,
+            slidesToScroll: 1,
+            infinite: true,
+            dots: true
+          }
+        },
+        {
+          breakpoint: 650,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1
+          }
+        },
+      ]
 });
 
 $('.reviews-slider').slick({
