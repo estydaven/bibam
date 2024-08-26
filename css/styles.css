@@ -1070,7 +1070,7 @@ input:focus:-ms-input-placeholder      {opacity: 0; transition: opacity 0.3s eas
     color: var(--yellow);
 }
 .show__image {
-    width: 266px;
+    width: calc(100% / 4 - 15px);
     height: 440px;
     display: flex;
     flex-direction: column;
@@ -1106,6 +1106,10 @@ input:focus:-ms-input-placeholder      {opacity: 0; transition: opacity 0.3s eas
 }
 .show__video {
     margin: 0 auto;
+}
+.gallery {
+    width: 100%;
+    max-width: 100%;
 }
 .up {
     width: 70px;
@@ -1185,7 +1189,7 @@ input:focus:-ms-input-placeholder      {opacity: 0; transition: opacity 0.3s eas
 }
 
 .hidden {
-    display: none;
+    display: none !important;
 }
 
 /* Popup styles */
@@ -1259,6 +1263,7 @@ input:focus:-ms-input-placeholder      {opacity: 0; transition: opacity 0.3s eas
     background-color: var(--yellow);
     cursor: pointer;
     transition: all .3s linear;
+    z-index: 99999;
 }
 .up-btn:hover {
     transform: scale(.9);
@@ -1371,6 +1376,30 @@ input:focus:-ms-input-placeholder      {opacity: 0; transition: opacity 0.3s eas
     .rentals__title {
         font-size: var(--title-h4);
     }
+    .gallery {
+        margin: 0 -10px;
+        padding-bottom: 30px;
+    }
+    .reviews-slider__dots_show {
+        bottom: -15px !important;
+    }
+    .show__image {
+        margin: 0 10px;
+    }
+    .show {
+        max-height: 100%;
+    }
+    .show_pdn {
+        padding: 150px 50px 50px 50px;
+    }
+    .show__title {
+        font-size: var(--title-h5);
+    }
+}
+@media (max-width: 1023px) {
+    .show__picture_hide {
+        display: none;
+    }
 }
 @media (max-width: 940px) {
     .event__title {
@@ -1384,6 +1413,21 @@ input:focus:-ms-input-placeholder      {opacity: 0; transition: opacity 0.3s eas
     .event {
         padding: 160px 25px 50px 25px;
         margin-bottom: 15px;
+    }
+    .show {
+        padding: 50px 30px;
+    }
+    .show-close {
+        padding-top: 0;
+    }
+    .show__info {
+        width: 100%;
+    }
+    .show__info_width {
+        margin: 0 0 20px 0;
+    }
+    .show__info_yellow {
+        margin-bottom: 20px;
     }
 }
 @media (max-width: 860px) {
@@ -1503,6 +1547,21 @@ input:focus:-ms-input-placeholder      {opacity: 0; transition: opacity 0.3s eas
     }
     .rentals__title {
         font-size: var(--title-main);
+    }
+    .show {
+        padding: 30px 20px;
+    }
+    .gallery {
+        padding-bottom: 45px;
+    }
+    .reviews-slider__dots_show {
+        bottom: 8px !important;
+    }
+    .show__title {
+        font-size: var(--title-main);
+    }
+    .show__image {
+        height: 350px;
     }
 }
 @media (max-width: 650px) {
@@ -1680,6 +1739,19 @@ input:focus:-ms-input-placeholder      {opacity: 0; transition: opacity 0.3s eas
     .rentals__inner {
         margin-bottom: 40px;
     }
+    .up {
+        width: 55px;
+        height: 55px;
+    }
+    .up__icon {
+        width: 17px;
+    }
+    .show__video {
+        margin: 0 auto;
+        width: 100%;
+        max-width: 100%;
+        height: 250px;
+    }
 }
 @media (max-width: 480px) {
     .header__logo {
@@ -1820,6 +1892,32 @@ input:focus:-ms-input-placeholder      {opacity: 0; transition: opacity 0.3s eas
     .rental__info {
         margin: 15px 0;
     }
+    .show__image {
+        height: 300px;
+    }
+    .show__title {
+        font-size: var(--title-little);
+        margin-bottom: 30px;
+    }
+    .show__info {
+        font-size: var(--subtitle);
+    }
+    .show__subtitle {
+        font-size: var(--main-text);
+        margin-bottom: 10px;
+    }
+}
+@media (max-width: 479px) {
+    .show__image {
+        margin: 0 auto;
+    }
+    .show-close {
+        align-items: center;
+        flex-direction: column;
+    }
+    .gallery {
+        margin: 0;
+    }
 }
 @media (max-width: 420px) {
     .title-page__title_little {
@@ -1830,6 +1928,19 @@ input:focus:-ms-input-placeholder      {opacity: 0; transition: opacity 0.3s eas
     }
     .rental {
         width: 100%;
+    }
+    .show__title {
+        font-size: var(--title-small);
+        margin-bottom: 20px;
+    }
+    .show__price {
+        width: 150px;
+    }
+    .show::before {
+        background: linear-gradient(180.00deg, rgba(0, 0, 0, 0), rgb(34, 34, 34) 14.265%);
+    }
+    .show_pdn:before {
+        background: linear-gradient(180.00deg, rgba(0, 0, 0, 0), rgb(34, 34, 34) 100%);
     }
 }
 @media (max-width: 380px) {

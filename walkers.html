@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Шоу-программы</title>
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/slick-theme.css">
     <link rel="stylesheet" href="css/styles.css">
     <link rel="icon" href="favicon2.ico" type="image/x-icon">
 </head>
@@ -59,20 +61,22 @@
                             <h5 class="show__subtitle">Огненные веера</h5>
                             <p>Огненные веера - это реквизит, который артисты используют для создания вихрей огня и изящных движений. Этот элемент придает шоу изящество и грацию.</p>
                         </div>
-                        <div class="show__image show__image_hidden">
-                            <img src="images/show/image1.jpg" alt="" class="show__picture">
-                        </div>
-                        <div class="show__image">
-                            <img src="images/show/image2.jpg" alt="" class="show__picture">
-                            <img src="images/show/image3.jpg" alt="" class="show__picture">
-                        </div>
-                        <div class="show__image show__image_hidden">
-                            <img src="images/show/image4.jpg" alt="" class="show__picture">
-                        </div>
-                        <div class="show__image">
-                            <img src="images/show/image5.jpg" alt="" class="show__picture">
-                            <img src="images/show/image6.jpg" alt="" class="show__picture">
-                        </div>
+                        <section class="gallery">
+                            <div class="show__image">
+                                <img src="images/show/image1.jpg" alt="" class="show__picture">
+                            </div>
+                            <div class="show__image">
+                                <img src="images/show/image2.jpg" alt="" class="show__picture">
+                                <img src="images/show/image3.jpg" alt="" class="show__picture show__picture_hide">
+                            </div>
+                            <div class="show__image">
+                                <img src="images/show/image4.jpg" alt="" class="show__picture">
+                            </div>
+                            <div class="show__image">
+                                <img src="images/show/image5.jpg" alt="" class="show__picture">
+                                <img src="images/show/image6.jpg" alt="" class="show__picture show__picture_hide">
+                            </div>
+                        </section>
                         <div class="show-footer">
                             <div class="show__price button button_yellow">От 800 <span class="show__price_span">byn</span></div>
                         </div>
@@ -140,6 +144,10 @@
 
     <div class="up-btn"><img src="images/icons/arr-left.svg" alt="" class="up-btn__icon"></div>
 
+    <script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/slider.js"></script>
     <script src="js/menu.js"></script>
     <script src="js/up.js"></script>
 </body>

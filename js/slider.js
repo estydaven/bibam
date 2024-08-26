@@ -58,3 +58,39 @@ $('.reviews-slider').slick({
         }
       ]
 });
+
+$('.gallery').slick({
+    slidesToShow: 2,
+    slidesToScroll: 1,
+    infinite: true,
+    dots: true,
+    arrows: false,
+    dotsClass: 'slick-dots reviews-slider__dots reviews-slider__dots_show',
+    responsive: [
+        {
+            breakpoint: 2000,
+            settings: 'unslick'
+        },
+        {
+          breakpoint: 1024,
+          settings: {
+            slidesToShow: 3,
+            slidesToScroll: 1,
+          }
+        },
+        {
+            breakpoint: 768,
+            settings: {
+              slidesToShow: 2,
+              slidesToScroll: 1,
+            }
+          },
+          {
+            breakpoint: 480,
+            settings: {
+              slidesToShow: 1,
+              slidesToScroll: 1,
+            }
+          }
+      ]
+});
