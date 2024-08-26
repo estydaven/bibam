@@ -1377,7 +1377,7 @@ input:focus:-ms-input-placeholder      {opacity: 0; transition: opacity 0.3s eas
         font-size: var(--title-h4);
     }
     .gallery {
-        margin: 0 -10px;
+        margin: 0 auto;
         padding-bottom: 30px;
     }
     .reviews-slider__dots_show {
@@ -1416,6 +1416,9 @@ input:focus:-ms-input-placeholder      {opacity: 0; transition: opacity 0.3s eas
     }
     .show {
         padding: 50px 30px;
+    }
+    .show_pdn {
+        padding: 150px 50px 50px 50px;
     }
     .show-close {
         padding-top: 0;
@@ -1549,7 +1552,16 @@ input:focus:-ms-input-placeholder      {opacity: 0; transition: opacity 0.3s eas
         font-size: var(--title-main);
     }
     .show {
-        padding: 30px 20px;
+        padding: 50px 30px;
+    }
+    .show_pdn {
+        padding: 100px 20px 30px 20px;
+    }
+    .show::before {
+        background: linear-gradient(180.00deg, rgba(0, 0, 0, 0), rgb(34, 34, 34) 12.265%);
+    }
+    .show_pdn:before {
+        background: linear-gradient(180.00deg, rgba(0, 0, 0, 0), rgb(34, 34, 34) 100%);
     }
     .gallery {
         padding-bottom: 45px;
@@ -1906,6 +1918,15 @@ input:focus:-ms-input-placeholder      {opacity: 0; transition: opacity 0.3s eas
         font-size: var(--main-text);
         margin-bottom: 10px;
     }
+    .show_pdn {
+        padding: 50px 20px 30px 20px;
+    }
+    .show::before {
+        background: linear-gradient(180.00deg, rgba(0, 0, 0, 0), rgb(34, 34, 34) 10%);
+    }
+    .show_pdn:before {
+        background: linear-gradient(180.00deg, rgba(0, 0, 0, 0), rgb(34, 34, 34) 100%);
+    }
 }
 @media (max-width: 479px) {
     .show__image {
@@ -1914,9 +1935,6 @@ input:focus:-ms-input-placeholder      {opacity: 0; transition: opacity 0.3s eas
     .show-close {
         align-items: center;
         flex-direction: column;
-    }
-    .gallery {
-        margin: 0;
     }
 }
 @media (max-width: 420px) {
@@ -1936,11 +1954,8 @@ input:focus:-ms-input-placeholder      {opacity: 0; transition: opacity 0.3s eas
     .show__price {
         width: 150px;
     }
-    .show::before {
-        background: linear-gradient(180.00deg, rgba(0, 0, 0, 0), rgb(34, 34, 34) 14.265%);
-    }
-    .show_pdn:before {
-        background: linear-gradient(180.00deg, rgba(0, 0, 0, 0), rgb(34, 34, 34) 100%);
+    .show_pdn {
+        padding: 95px 20px 30px 20px;
     }
 }
 @media (max-width: 380px) {
