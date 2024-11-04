@@ -246,6 +246,7 @@ input:focus:-ms-input-placeholder      {opacity: 0; transition: opacity 0.3s eas
 }
 .hero__image {
     border-radius: 20px;
+    width: 390px;
 }
 .hero-info_button {
     width: 240px;
@@ -330,6 +331,11 @@ input:focus:-ms-input-placeholder      {opacity: 0; transition: opacity 0.3s eas
 .slick-main_next {
     right: 50px;
     background-image: url(../images/icons/arr-right.svg);
+}
+.home-video {
+    max-width: 100%;
+    height: 475px;
+    border-radius: 20px;
 }
 
 /* First Pages Link */
@@ -788,7 +794,6 @@ input:focus:-ms-input-placeholder      {opacity: 0; transition: opacity 0.3s eas
 }
 .event_fourth-event {
     background-image: url(../images/event/event-4.jpg);
-    margin-bottom: 0;
 }
 .event__title {
     font-family: 'gropledbold';
@@ -1157,6 +1162,11 @@ input:focus:-ms-input-placeholder      {opacity: 0; transition: opacity 0.3s eas
     height: 25px;
     transition: all .3s linear;
 }
+.footer-info__ico_tg {
+    width: 15px;
+    height: 15px;
+    transition: none;
+}
 .footer-info__ico:hover {
     transform: scale(0.8);
 }
@@ -1164,6 +1174,25 @@ input:focus:-ms-input-placeholder      {opacity: 0; transition: opacity 0.3s eas
     display: block;
     color: var(--main-gray);
     margin-bottom: 5px;
+}
+.footer-info__link {
+    margin-top: 5px;
+    display: flex;
+}
+.footer-info__link_tg {
+    justify-content: center;
+    align-items: center;
+    width: 25px;
+    height: 25px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    transition: all .3s linear;
+}
+.footer-info__link_tg:hover {
+    transform: scale(0.8);
+}
+.footer-info__item {
+    flex: 1;
 }
 .footer__inner {
     display: flex;

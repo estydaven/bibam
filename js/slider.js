@@ -45,6 +45,8 @@ $('.reviews-slider').slick({
     slidesToShow: 2,
     slidesToScroll: 1,
     infinite: true,
+    autoplay: true,
+    speed: 500,
     dots: true,
     arrows: false,
     dotsClass: 'slick-dots reviews-slider__dots',
