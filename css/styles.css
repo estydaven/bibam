@@ -494,6 +494,26 @@ input:focus:-ms-input-placeholder      {opacity: 0; transition: opacity 0.3s eas
     max-height: 190px;
     object-fit: contain;
 }
+.many-picture-slider__item_design {
+    color: var(--white);
+}
+.many-picture-slider__slide_design {
+    transition: background-position 0.5s ease;
+}
+.many-picture-slider__more {
+    color: var(--yellow);
+    text-align: right;
+    padding-top: 15px;
+    font-size: var(--reviews-text);
+    transition: all .5s linear;
+    opacity: 0;
+}
+.many-picture-slider__slide_design:hover {
+    background-position: center -20px;
+}
+.many-picture-slider__slide_design:hover .many-picture-slider__more {
+    opacity: 1;
+}
 
 /* Reviews styles */
 .reviews {
