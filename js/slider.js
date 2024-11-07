@@ -69,10 +69,10 @@ $('.gallery').slick({
     arrows: false,
     dotsClass: 'slick-dots reviews-slider__dots reviews-slider__dots_show',
     responsive: [
-        {
-            breakpoint: 2000,
-            settings: 'unslick'
-        },
+        // {
+        //     breakpoint: 2000,
+        //     settings: 'unslick'
+        // },
         {
           breakpoint: 1024,
           settings: {
