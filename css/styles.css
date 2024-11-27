@@ -295,9 +295,15 @@ input:focus:-ms-input-placeholder      {opacity: 0; transition: opacity 0.3s eas
     background-image: url(../images/design/projects/3d/1.jpg);
 }
 .main-slider__slide_second-design {
-    background-image: url(../images/design/projects/3d/2.jpg);
+    background-image: url(../images/design/projects/graph/9.png);
 }
 .main-slider__slide_third-design {
+    background-image: url(../images/design/projects/digital/b4e1a4196080237.66195e0c32a17.jpg);
+}
+.main-slider__slide_fourth-design {
+    background-image: url(../images/design/projects/3d/2.jpg);
+}
+.main-slider__slide_fifth-design {
     background-image: url(../images/design/projects/3d/3.jpg);
 }
 .main-slider__slide_first-events {
@@ -696,16 +702,20 @@ input:focus:-ms-input-placeholder      {opacity: 0; transition: opacity 0.3s eas
     max-height: 440px;
 }
 .many-picture-slider__slide_first-design {
-    background-image: url(../images/design/slide-1.jpg);
+    background-image: url(../images/design/projects/graph/20.jpg);
 }
 .many-picture-slider__slide_second-design {
-    background-image: url(../images/design/slide-2.jpg);
+    background-image: url(../images/design/projects/digital/2a5f3f196080237.66195e0c3314e.png);
 }
 .many-picture-slider__slide_third-design {
     background-image: url(../images/design/projects/3d/4.jpg);
 }
 .many-picture-slider__slide_fourth-design {
     background-image: url(../images/design/slide-2.jpg);
+}
+.design-image {
+    max-height: 800px;
+    object-fit: cover;
 }
 
 .sponsors {
@@ -821,10 +831,12 @@ input:focus:-ms-input-placeholder      {opacity: 0; transition: opacity 0.3s eas
     background-image: url(../images/event/event-2.jpg);
 }
 .event_third-event {
-    background-image: url(../images/show/stilts/3.JPG);
+    background-image: url(../images/show/stilts/3.jpg);
+    background-position: top center;
 }
 .event_fourth-event {
     background-image: url(../images/event/event-4.jpg);
+    background-position: bottom center;
 }
 .event__title {
     font-family: 'gropledbold';
@@ -1067,10 +1079,7 @@ input:focus:-ms-input-placeholder      {opacity: 0; transition: opacity 0.3s eas
     background-image: url(../images/show/bg3.jpg);
 }
 .show_walkers {
-    background-image: url(../images/show/stilts/3.JPG);
-}
-.show:last-child {
-    margin-bottom: 100px;
+    background-image: url(../images/show/stilts/3.jpg);
 }
 .show_walkers {
     max-height: 100%;
@@ -1149,7 +1158,7 @@ input:focus:-ms-input-placeholder      {opacity: 0; transition: opacity 0.3s eas
     display: flex;
     justify-content: space-between;
     margin-bottom: 30px;
-    padding-bottom: 30px;
+    padding-bottom: 100px;
     margin: 0 -15px;
 }
 .gallery__img {
@@ -1932,9 +1941,6 @@ input:focus:-ms-input-placeholder      {opacity: 0; transition: opacity 0.3s eas
     }
     .many-picture-slider {
         padding-bottom: 30px;
-    }
-    .slider-design__dots {
-        bottom: -45px !important;
     }
     .sponsor {
         width: calc(100% / 3 - 10px);
