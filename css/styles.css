@@ -1345,6 +1345,74 @@ input:focus:-ms-input-placeholder      {opacity: 0; transition: opacity 0.3s eas
     transform: rotate(88deg);
 }
 
+/* Project Page Styles*/
+.project {
+    margin-bottom: 50px;
+}
+.project:last-child {
+    margin-bottom: 0;
+}
+.projects {
+    padding-bottom: 100px;
+}
+.masonry-grid {
+    column-count: 3; /* Количество колонок */
+    column-gap: 20px; /* Расстояние между колонками */
+  }
+.masonry-item {
+    break-inside: avoid; /* Запрещает разрыв элемента внутри колонки */
+    margin-bottom: 20px; /* Отступ снизу для элементов */
+    overflow: hidden;
+}
+.masonry-item__image {
+    width: 100%; /* Картинка будет растягиваться по ширине блока */
+    height: auto; /* Высота будет зависеть от пропорций изображения */
+    display: block;
+    cursor: pointer;
+    transition: all .3s linear;
+}
+.masonry-item:hover .masonry-item__image {
+    transform: scale(1.1);
+}
+/* Модальное окно */
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    display: none;
+}
+.modal-content {
+    position: relative;
+    max-width: 90%;
+    max-height: 90%;
+}
+.modal-content img {
+    width: 100%;
+    height: 80vh;
+    border-radius: 10px;
+}
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: rgba(255, 255, 255, 0.7);
+    border: none;
+    padding: 5px 10px;
+    font-size: 20px;
+    cursor: pointer;
+    border-radius: 50%;
+}
+.close-btn:hover {
+    background: rgba(255, 255, 255, 1);
+}
+
 /* Media Queries */
 @media (max-width: 1200px) {
     .commerce-block {
