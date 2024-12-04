@@ -14,6 +14,15 @@ $('.about-slider').slick({
     nextArrow: '<button type="button" class="slick-main slick-main_next"></button>',
 });
 
+$('.services-slider').slick({
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    infinite: true,
+    dots: false,
+    prevArrow: '<button type="button" class="slick-main slick-main_prev"></button>',
+    nextArrow: '<button type="button" class="slick-main slick-main_next"></button>',
+});
+
 $('.slider-design').slick({
     slidesToShow: 3,
     slidesToScroll: 1,
@@ -69,9 +78,10 @@ $('.gallery-walkers').slick({
     slidesToShow: 2,
     slidesToScroll: 1,
     infinite: true,
-    dots: true,
-    arrows: false,
-    dotsClass: 'slick-dots reviews-slider__dots reviews-slider__dots_show',
+    dots: false,
+    arrows: true,
+    prevArrow: '<button type="button" class="slick-main slick-main_prev"></button>',
+    nextArrow: '<button type="button" class="slick-main slick-main_next"></button>',
     responsive: [
         // {
         //     breakpoint: 2000,

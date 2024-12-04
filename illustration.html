@@ -3,7 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Event Bibam</title>
+    <title>Иллюстрация</title>
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/slick-theme.css">
     <link rel="stylesheet" href="css/styles.css">
     <link rel="icon" href="favicon2.ico" type="image/x-icon">
 </head>
@@ -24,7 +26,7 @@
                 <a href="tel:+375298699603" class="header__phone">+375 29 869 96 03</a>
                 <div class="close">
                     <div class="close__line"></div>
-                    <div class="close__line close__line_second"></div>
+                    <div class="close__line"></div>
                 </div>
             </nav>
             <ul class="burger">
@@ -35,25 +37,23 @@
         </header>
         <main>
             <section class="title-page">
-                <h1 class="title-page__title">Event</h1>
+                <h1 class="title-page__title title-page__title_little">Проекты по графическому дизайну</h1>
             </section>
-            <section class="events">
-                <!-- <div class="event event_first-event" id="events">
-                    <h3 class="event__title">Администрирование и координирование событий</h3>
-                    <a href="event.html" class="event__link button button_yellow">Подробнее</a>
-                </div> -->
-                <div class="event event_fourth-event" id="fire">
-                    <h3 class="event__title">Театр огня Ergo Bibamus</h3>
-                    <a href="show.html" class="event__link button button_yellow">Подробнее</a>
-                </div>
-                <div class="event event_third-event" id="walkers">
-                    <h3 class="event__title">Ходулисты</h3>
-                    <a href="walkers.html" class="event__link button button_yellow">Подробнее</a>
-                </div>
-                <div class="event event_second-event" id="rent">
-                    <h3 class="event__title">Прокат оборудования</h3>
-                    <a href="rent.html" class="event__link button button_yellow">Подробнее</a>
-                </div>
+            <section class="projects">
+                <section class="project">
+                    <h3 class="rentals__title">Проект первый</h3>
+                    <div class="rental__info">Описание первого проекта</div>
+                    <section class="main-slider">
+                        <div class="main-slider__inner">
+                            <img src="images/design/projects/illustration/project4/14.jpg" class="design-image" alt="">
+                            <img src="images/design/projects/illustration/project4/15.jpg" class="design-image" alt="">
+                            <img src="images/design/projects/illustration/project4/16.jpg" class="design-image" alt="">
+                            <img src="images/design/projects/illustration/project4/17.jpg" class="design-image" alt="">
+                            <img src="images/design/projects/illustration/project4/19.jpg" class="design-image" alt="">
+                            <img src="images/design/projects/illustration/project4/30f5fe164340765.63f52b41884de.png" class="design-image" alt="">
+                        </div>
+                    </section>
+                </section>
             </section>
         </main>
         <footer class="footer">
@@ -88,10 +88,10 @@
                 <div class="footer-menu">
                     <h5 class="footer-menu__title">Event</h5>
                     <ul class="footer-menu__list">
-                        <li class="footer-menu__item"><a href="#events" class="footer-menu__link">Администрирование и координирование событий</a></li>
-                        <li class="footer-menu__item"><a href="#rent" class="footer-menu__link">Прокат оборудования</a></li>
-                        <li class="footer-menu__item"><a href="#walkers" class="footer-menu__link">Ходулисты</a></li>
-                        <li class="footer-menu__item"><a href="#fire" class="footer-menu__link">Театр огня</a></li>
+                        <li class="footer-menu__item"><a href="events.html#events" class="footer-menu__link">Администрирование и координирование событий</a></li>
+                        <li class="footer-menu__item"><a href="events.html#rent" class="footer-menu__link">Прокат оборудования</a></li>
+                        <li class="footer-menu__item"><a href="events.html#walkers" class="footer-menu__link">Ходулисты</a></li>
+                        <li class="footer-menu__item"><a href="events.html#fire" class="footer-menu__link">Театр огня</a></li>
                     </ul>
                 </div>
                 <div class="footer-menu">
@@ -106,19 +106,20 @@
                 <div class="footer-menu">
                     <h5 class="footer-menu__title">Прокат оборудования</h5>
                     <ul class="footer-menu__list">
-                        <li class="footer-menu__item"><a href="rent.html#sound" class="footer-menu__link">Звук</a></li>
-                        <li class="footer-menu__item"><a href="rent.html#rent" class="footer-menu__link">Аренда красных дорожек</a></li>
-                        <li class="footer-menu__item"><a href="rent.html#smoke" class="footer-menu__link">Дым</a></li>
-                        <li class="footer-menu__item"><a href="rent.html#sparks" class="footer-menu__link">Искры</a></li>
+                        <li class="footer-menu__item"><a href="#sound" class="footer-menu__link">Звук</a></li>
+                        <li class="footer-menu__item"><a href="#rent" class="footer-menu__link">Аренда красных дорожек</a></li>
+                        <li class="footer-menu__item"><a href="#smoke" class="footer-menu__link">Дым</a></li>
+                        <li class="footer-menu__item"><a href="#sparks" class="footer-menu__link">Искры</a></li>
                     </ul>
                 </div>
             </div>
         </footer>
     </div>
 
-    <div class="up-btn"><img src="images/icons/arr-left.svg" alt="" class="up-btn__icon"></div>
-
+    <script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script src="js/slick.min.js"></script>
     <script src="js/menu.js"></script>
-    <script src="js/up.js"></script>
+    <script src="js/slider.js"></script>
 </body>
 </html>

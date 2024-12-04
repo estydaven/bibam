@@ -291,21 +291,6 @@ input:focus:-ms-input-placeholder      {opacity: 0; transition: opacity 0.3s eas
 .main-slider__slide_third {
     background-image: url(../images/home-page/slide.jpg);
 }
-.main-slider__slide_first-design {
-    background-image: url(../images/design/projects/3d/1.jpg);
-}
-.main-slider__slide_second-design {
-    background-image: url(../images/design/projects/graph/9.png);
-}
-.main-slider__slide_third-design {
-    background-image: url(../images/design/projects/digital/b4e1a4196080237.66195e0c32a17.jpg);
-}
-.main-slider__slide_fourth-design {
-    background-image: url(../images/design/projects/3d/2.jpg);
-}
-.main-slider__slide_fifth-design {
-    background-image: url(../images/design/projects/3d/3.jpg);
-}
 .main-slider__slide_first-events {
     background-image: url(../images/events/slide-1.jpg);
 }
@@ -314,6 +299,10 @@ input:focus:-ms-input-placeholder      {opacity: 0; transition: opacity 0.3s eas
 }
 .main-slider__slide_third-events {
     background-image: url(../images/events/slide-1.jpg);
+}
+.design-slide {
+    max-height: 700px;
+    object-fit: cover;
 }
 .slick-main {
     width: 70px;
@@ -711,11 +700,14 @@ input:focus:-ms-input-placeholder      {opacity: 0; transition: opacity 0.3s eas
     background-image: url(../images/design/projects/3d/4.jpg);
 }
 .many-picture-slider__slide_fourth-design {
-    background-image: url(../images/design/slide-2.jpg);
+    background-image: url(../images/design/projects/illustration/project4/16.jpg);
 }
 .design-image {
     max-height: 800px;
     object-fit: cover;
+}
+.services-slider {
+    margin: 0 -15px 30px;
 }
 
 .sponsors {
@@ -911,6 +903,9 @@ input:focus:-ms-input-placeholder      {opacity: 0; transition: opacity 0.3s eas
 .rentals__title {
     font-family: 'gropledbold';
     font-size: var(--title-h5);
+    margin-bottom: 40px;
+}
+.rentals__subtitle {
     margin-bottom: 40px;
 }
 .rentals__inner {
@@ -1166,10 +1161,15 @@ input:focus:-ms-input-placeholder      {opacity: 0; transition: opacity 0.3s eas
     height: 600px;
     object-fit: cover;
 }
-/* .gallery-fairytale .gallery__img {
-    width: 500px !important;
-    max-width: 100% !important;
-} */
+.gallery-walkers .gallery__img {
+    height: 800px;
+}
+.gallery-fairytale .gallery__img {
+    height: auto;
+}
+.gallery-office .gallery__img {
+    height: 800px;
+}
 .up {
     width: 70px;
     height: 70px;
